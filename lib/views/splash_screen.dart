@@ -12,13 +12,14 @@ class SplashScreen extends StatelessWidget {
         scrollDirection: Axis.vertical,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Center(
               child: Container(
                 margin:
                     const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 decoration: BoxDecoration(
+                  image: const DecorationImage(image: NetworkImage("https://unsplash.com/photos/a-red-blue-and-green-fluid-painting-on-a-black-background-hoS3dzgpHzw",scale: 1)),
                     color: const Color.fromARGB(255, 126, 144, 235),
                     borderRadius: BorderRadius.circular(4)),
                 height: MediaQuery.sizeOf(context).height * .50,
@@ -35,9 +36,10 @@ class SplashScreen extends StatelessWidget {
                 ),
               ),
             ),
-            const CircleAvatar(
+             const CircleAvatar(
               radius: 40,
-              backgroundColor: Colors.red,
+              backgroundImage: NetworkImage("https://picsum.photos/200/300"),
+              //backgroundColor: Colors.red,
             ),
             //provide a space
             const SizedBox(
@@ -52,7 +54,7 @@ class SplashScreen extends StatelessWidget {
               height: MediaQuery.sizeOf(context).height * .25,
               width: MediaQuery.sizeOf(context).width * .25,
               child: const Text(
-                "Hello I am another Text Inside Conter",
+                "Hello my name is Tamjid",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
