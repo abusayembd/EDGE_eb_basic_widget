@@ -1,4 +1,3 @@
-import 'package:first_app/views/list_view_page.dart';
 import 'package:first_app/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +16,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const ListViewPage());
+        home: const SplashScreen());
   }
 }

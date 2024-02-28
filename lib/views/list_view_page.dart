@@ -22,7 +22,8 @@ class _ListViewPageState extends State<ListViewPage> {
       body: ListView.builder(
         itemCount: 10,
         itemBuilder: (BuildContext context, int index) {
-          return Text("Hello I am a name $index");
+          return Text
+            ("Hello I am a name $index");
 
           //   Card(
           //   elevation: 10,
